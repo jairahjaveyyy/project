@@ -1,0 +1,32 @@
+
+    
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:beige;
+    color: 	#5c7438;
+}
+
+ h1{
+    padding: 50px;
+    text-align: center;
+}
+
+.main, .main1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+
+.one, .two, .three, .four, .five, .six{
+    padding: 50px;
+    border: 2px solid	#5c7438;
+    margin: 10px;
+}
