@@ -62,3 +62,12 @@ p{
 .one, .two{
     padding: 2px;
 }
+
+.background img{
+    width: 50%;
+
+}
+
+.right{
+    float:right
+}

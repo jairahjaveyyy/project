@@ -21,7 +21,7 @@ body{
 }
 
 p{
-    margin-top: 5%;
+    margin-top: 2%;
     font-size: 18px;
     font-style: normal;
     margin-block-end: 5%;
@@ -40,7 +40,7 @@ p{
 }
 img{
     width: 100%;
-    height: 100%;
+    height: 80%;
     padding: 10px;
     border: solid #5c7438 5px;
     border-radius: 10px;
@@ -64,7 +64,38 @@ button{
     font-weight: bold;
 }
 button:hover{
-    background: linear-gradient(pink, rgb(247, 223, 91));
+    background-color:  #5c7438;
     color: white;
     transform: translateY(-15px);
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    padding: 2rem;
+    color: beige;
+    margin: 1px; 
+    font-weight: bold;
+}
+
+a:hover{
+    color:wheat;
+    transition: all  0.15s;
+    transform: translateY(5px);
+}
+
+nav{
+height: 70px;
+display: flex;
+list-style: none;
+justify-content: center;
+align-items: center;
+padding: 5px;
+background-color: #5c7438;
 }
