@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
+
+    
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +9,7 @@
 
 body{
     background-color: beige;
+     font-family: "AR One Sans", sans-serif;
 }
 
 .container{
@@ -30,13 +34,16 @@ p{
 .left{
     width: 50%;
     padding: 1rem;
-    margin-top: 150px;
+    margin-top: 70px;
+}
+.left h1{
+    color:#5c7438;
 }
 
 .right{
     width: 50%;
     padding: 1rem;
-    margin-top: 150px;
+    margin-top: 80px;
 }
 img{
     width: 100%;
@@ -97,5 +104,16 @@ list-style: none;
 justify-content: center;
 align-items: center;
 padding: 5px;
-background-color: #5c7438;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+background: linear-gradient(to bottom, #5c7438, #416324);
 }
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .container {
+    animation: fade-in 3s ease-in-out forwards;
+  }
+  

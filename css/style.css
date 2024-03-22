@@ -1,73 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
 
-    
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color:beige;
-    color: 	#5c7438;
+body {
+    background-image: url('/images/back.JPG');
+    background-size: 80%;
+    color: black;
+    font-family: "AR One Sans", sans-serif;
 }
 
-    ul{
-        display: flex;
-        list-style: none;
-        justify-content: center;
-        align-items: center;
-    }
-
-    a{
-        text-decoration: none;
-        padding: 2rem;
-        color: beige;
-        margin: 1px; 
-        font-weight: bold;
-    }
-
-    a:hover{
-        color:wheat;
-        transition: all  0.15s;
-        transform: translateY(5px);
-    }
-
-nav{
-    height: 70px;
+ul{
     display: flex;
     list-style: none;
     justify-content: center;
     align-items: center;
-    padding: 5px;
-    background-color: #5c7438;
 }
 
-.center{
+a{
+    text-decoration: none;
+    padding: 2rem;
+    color: beige;
+    margin: 1px; 
+    font-weight: bold;
+}
+
+a:hover{
+    color:wheat;
+    transition: all  0.15s;
+    transform: translateY(5px);
+    
+}
+
+nav{
+height: 70px;
+display: flex;
+list-style: none;
+justify-content: center;
+align-items: center;
+padding: 5px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+background: linear-gradient(to bottom, #5c7438, #416324);
+}
+
+
+.center p {
+    padding-bottom: 10px;
+}
+
+.center {
     text-align: center;
-    padding: 50px;
-    border: 2px solid #5c7438 ;
-    margin: 10%;
-    /* box-shadow: 0px 0px 100px  #5c7438  ; */
+    padding: 30px;
+    margin: 3%;
+    margin-left: 50%;
+    background-color: beige;
+    width: 43%;
+    border-radius: 20px;
+    opacity: 0.75; 
+    animation: glow 1.5s ease-in-out infinite alternate; 
+    box-shadow: 0 0 20px 10px #5c7438;
 }
 
-.name{
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px 5px #5c7438; 
+    }
+    100% {
+        box-shadow: 0 0 25px 15px #5c7438; 
+    }
+}
+
+.name {
     color: green;
 }
 
-p{
-    width: 500px;
-    margin: auto;
-}
-
-.one, .two{
-    padding: 2px;
-}
-
-.background img{
+.background img {
     width: 50%;
-
+    display: block;
+    margin: 0 auto;
 }
 
-.right{
-    float:right
+.right {
+    float: right;
 }
+
+img {
+    width: 20%;
+    height: auto; 
+}
+
+.socmed a {
+    padding: 1rem; 
+    display: inline-block; 
+}
+
+.socmed img {
+    width: 30px; 
+    height: auto; 
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 0.65; }
+  }
+  
+  .center {
+    animation: fade-in 3s ease-in-out forwards;
+  }
+  
+  
+  

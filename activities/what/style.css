@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
 
+    
     
 *{
     padding: 0;
@@ -9,11 +11,13 @@
 body{
     background-color:beige;
     color: 	#5c7438;
+    font-family: "AR One Sans", sans-serif;
+    
 }
 
  h1{
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .main, .main1{
@@ -26,16 +30,29 @@ body{
 
 
 .one{
+    color: beige;
     padding: 50px;
-    border: 2px solid	#5c7438;
-    margin: 10px;
-    width: 300px;
-    height: 300px;
+    margin: 8px;
+    width: 220px;
+    height: 220px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #5c7438;
+    border-radius: 20px;
+    opacity: 0.6;
+    transition: background, transform .8s;
+    
+}
+.one h2{
+    padding: 8px;
+}
+
+.one:hover{
+    opacity: 1;
+    transform: translateY(10px);
 }
 
 ul{
@@ -66,32 +83,45 @@ list-style: none;
 justify-content: center;
 align-items: center;
 padding: 5px;
-background-color: #5c7438;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+background: linear-gradient(to bottom, #5c7438, #416324);
 }
 
 button{
+    margin: 10px;
     padding: 5px;
     border: 2px solid #5c7438;
-    color: rgb(14, 13, 13);
     transition: background, transform .8s;
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
+    background-color:  beige;
     
     
 }
 button:hover{
-    background-color:  #5c7438;
-    color: white;
-    transform: translateY(10px);
+    background-color:   #ccf78c;
+    color: black;
+    transform: translateY(5px);
 }
 
 button a{
     text-decoration: none;
     color: black;
+    
 }
 
 img{
     padding: 5px;
-    width: 200px;
+    width: 150px;
 }
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .text-animation {
+    animation: fade-in 3s ease-in-out forwards;
+  }
+  
