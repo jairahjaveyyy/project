@@ -34,16 +34,21 @@ p, h1{
 
 
 .sectionOne{
-    display: flex;
-   justify-content: center;
-   align-items: center;
+    max-width: 1200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Ensures flex items wrap to the next line when they don't fit */
 }
+
 
 .card{
     padding: 50px;
     display: flex;
     justify-content: space-around;
     margin-left: 15px;
+    
 }
 
 
@@ -65,6 +70,7 @@ img{
     border-radius: 20px;
     transition: background, transform .8s;
     opacity: 0.6;
+    margin-left: 20px;
 }
 
 .p1 p, .p2 p, .p3 p{
@@ -188,6 +194,7 @@ background: linear-gradient(to bottom, #5c7438, #416324);
 
 .info h1{
     color: #5c7438;
+    margin-top: 10%;
 }
 
 
@@ -199,6 +206,108 @@ background: linear-gradient(to bottom, #5c7438, #416324);
   .sectionOne, .sectionTwo{
     animation: fade-in 3s ease-in-out forwards;
   }
+
+  @media screen and (max-width: 768px) {
+   
+    .image img{
+        order: -1;
+        margin-top: 5%;
+    }
+
+    
+    .card img {
+        max-width: 80%;
+        height: 30%;
+        
+    }
+    
+    .p1, .p2, .p3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 60%;
+        padding: 10px;
+        margin-top: 5%;
+        margin-left: 20px;
+    }
+    
+
+    .card{
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally on smaller screens */
+        width: 100%; /* Adjust the width of the .card for better fit on small screens */
+        margin: 20px auto; /* Center the .card horizontally */
+
+        
+        }
+
+    .btn1 {
+        width: 50%;
+        margin: 0 auto; /* Center the button horizontally */
+        display: block; /* Ensure the button takes the full width of its container */
+    }
+
+}
+
+
+
+/* Add this media query for phone-sized screens */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px; /* Add padding to the body for better spacing on small screens */
+    }
+
+    .sectionOne {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally on smaller screens */
+    }
+
+    .card {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally on smaller screens */
+        width: 90%; /* Adjust the width of the .card for better fit on small screens */
+        margin: 20px auto; /* Center the .card horizontally */
+
+    }
+
+    .image {
+        width: 80%; /* Adjust the width of the image container for better fit on small screens */
+        max-width: 300px; /* Set a maximum width for the image container */
+    }
+
+    .p1, .p2, .p3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        margin-top: 5%;
+        margin-left: 20px;
+    }
+    .image img {
+        height: auto; /* Ensure the image height adjusts proportionally */
+    }
+
+    .projecttitle {
+        width: 100%; /* Adjust width for better fit on small screens */
+        margin-left: 0; /* Center the project title on small screens */
+    }
+
+    .btn1,
+    button {
+        width: 80%; /* Adjust button width for better fit on small screens */
+        margin: 10px auto; /* Center buttons horizontally */
+    }
+
+    .info h1 {
+        width: 100%; /* Adjust width for better fit on small screens */
+        margin-left: 0; /* Center the heading on small screens */
+    }
+    
+    /* Add any additional adjustments as needed for small screens */
+}
 
 
   

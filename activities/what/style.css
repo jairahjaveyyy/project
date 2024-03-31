@@ -71,10 +71,10 @@ nav a{
 }
 
 nav a:hover{
-    color:wheat;
     transition: all  0.15s;
     transform: translateY(5px);
 }
+
 
 nav{
 height: 70px;
@@ -123,5 +123,9 @@ img{
   
   .text-animation {
     animation: fade-in 3s ease-in-out forwards;
+  }
+
+  @media screen and (max-width: 771px) {
+    
   }
   

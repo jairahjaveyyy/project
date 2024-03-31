@@ -32,27 +32,24 @@ a:hover{
     color:wheat;
     transition: all  0.15s;
     transform: translateY(5px);
-    
 }
 
 nav{
-height: 70px;
-display: flex;
-list-style: none;
-justify-content: center;
-align-items: center;
-padding: 5px;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-background: linear-gradient(to bottom, #5c7438, #416324);
+    height: 70px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #5c7438, #416324);
 }
-
 
 .center p {
     padding-bottom: 10px;
 }
 
 .center {
-    text-align: center;
     padding: 30px;
     margin: 3%;
     margin-left: 50%;
@@ -61,7 +58,8 @@ background: linear-gradient(to bottom, #5c7438, #416324);
     border-radius: 20px;
     opacity: 0.75; 
     animation: glow 1.5s ease-in-out infinite alternate; 
-    box-shadow: 0 0 20px 10px #5c7438;
+    box-shadow: 0 0 20px 10px #5c7438; text-align: center;
+   
 }
 
 @keyframes glow {
@@ -102,14 +100,42 @@ img {
     height: auto; 
 }
 
-@keyframes fade-in {
-    0% { opacity: 0; }
-    100% { opacity: 0.65; }
-  }
-  
-  .center {
-    animation: fade-in 3s ease-in-out forwards;
-  }
-  
-  
-  
+/* Responsive Media Queries */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        background-image: url('../images/backg.JPG');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    
+        color: black;
+        font-family: "AR One Sans", sans-serif;
+    }
+    
+    .center {
+        margin: auto;
+        width: 60%;
+        max-width: 700px ;
+       
+    }
+
+    .center p {
+        padding-bottom: 5%;
+    }
+
+    .socmed img {
+        width: 20px; 
+        height: auto; 
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .center {
+        width: 90%;
+        max-width: 400px;
+    }
+}
