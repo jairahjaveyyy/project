@@ -7,11 +7,11 @@
 }
 
 body {
-    background-image: url('../images/backg.JPG');
+    background-image: url('../images/wow.avif');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: top;
+    background-position: bottom;
     color: black;
     font-family: "AR One Sans", sans-serif;
 }
@@ -53,26 +53,15 @@ nav{
 }
 
 .center {
+    text-align: center;
     padding: 30px;
     margin: 3%;
-    margin-left: 50%;
-    background-color: beige;
+    margin-left: 40%;
+    background-color:transparent;
     width: 43%;
     border-radius: 20px;
-    opacity: 0.75; 
-    animation: glow 1.5s ease-in-out infinite alternate; 
-    box-shadow: 0 0 20px 10px #5c7438; text-align: center;
-   
 }
 
-@keyframes glow {
-    0% {
-        box-shadow: 0 0 10px 5px #5c7438; 
-    }
-    100% {
-        box-shadow: 0 0 25px 15px #5c7438; 
-    }
-}
 
 .name {
     color: green;
@@ -108,7 +97,7 @@ img {
 @media screen and (max-width: 768px) {
 
     body {
-        background-image: url('../images/backg.JPG');
+        background-image: url('../images/wow.avif');
         background-size: cover;
         background-repeat: no-repeat;
         color: black;
