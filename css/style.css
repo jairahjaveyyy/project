@@ -8,7 +8,10 @@
 
 body {
     background-image: url('../images/backg.JPG');
-    background-size: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
     color: black;
     font-family: "AR One Sans", sans-serif;
 }
@@ -108,8 +111,6 @@ img {
         background-image: url('../images/backg.JPG');
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: fixed;
-    
         color: black;
         font-family: "AR One Sans", sans-serif;
     }
