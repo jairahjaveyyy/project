@@ -194,9 +194,11 @@ img {
     
         a{
             padding: 1rem;
-            font-size: 8px;
+            font-size: 11px;
             text-align: center;
         }
+
+        
 
         .picture {
             margin-left: 30%;
