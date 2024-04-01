@@ -15,7 +15,7 @@ body{
     max-width: 1200px;
     display:flex;
     margin: 0 auto;
-    flex-wrap: wrap; /* Ensures flex items wrap to the next line when they don't fit */
+    flex-wrap: wrap;
 }
 
 .btns{
@@ -45,11 +45,11 @@ p{
 .right{
     width: 50%;
     margin-top: 80px;
-    order: -1; /* Changes the order of flex items, placing .right above .left */
+    order: -1; 
 }
 img{
     width: 90%;
-    height: auto; /* Ensures images maintain aspect ratio */
+    height: auto; 
     padding: 10px;
     border: solid #5c7438 5px;
     border-radius: 10px;
@@ -129,4 +129,16 @@ nav{
         margin: 5%;
     }
 
+}
+
+@media screen and (max-width: 480px) {
+    a{
+        padding: 1rem;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    button{
+        font-size:11px;
+    }
 }
